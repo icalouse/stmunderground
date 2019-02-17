@@ -1,20 +1,213 @@
 <!DOCTYPE html>
 <html>
-<title>STM</title>
+<title>Société de TechnoMusik</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="https://www.freeiconspng.com/uploads/subway-icon-png-3.png">
-<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Barlow|Heebo|Hind+Siliguri|Istok+Web" rel="stylesheet">
 <link href="stmmontreal_bold-webfont.eot">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ad49a3eb93645cf746b129d6c/8980ecc0b2d58be3c8330abf6.js");</script>
-<body style="background-color:black">
+<style>
+  @font-face {
+    font-family: 'stm_montreal';
+    src: url('stmmontreal_bold-webfont.eot');
+    src: url('stmmontreal_regular-webfont.woff') format('woff');
+  }
+  body {
+    font-family: 'stm_montreal', sans-serif;
+    color: #009EE0;
+  }
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
 
-<div style="height:100%; width:100%; overflow: hidden">
-  <img style="height:auto; max-width:100%" src="https://i.etsystatic.com/14871725/r/il/14b51f/1388809868/il_fullxfull.1388809868_nrel.jpg">
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  .column img:hover {
+    opacity: 1;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  input[type=submit] {
+    background-color: #009EE0;
+    border: 1px;
+    border-radius: 6px;
+    text-align: center;
+    color: #F9EA18;
+    font-size: 14;
+    font-family: 'stm_montreal';
+    display: inline-block;
+    margin: 12px;
+    height: 36px;
+    width: 96px;
+  }
+  input[type=submit]:hover{
+    background-color: #0088c1;
+  }
+  #past-events{
+    display: none;
+    position: absolute;
+    height: 8%;
+    width:10%;
+    left: 10%;
+    top: 10%;
+
+  }
+  #upcoming-event{
+    display: none;
+    position: absolute;
+    height: 8%;
+    width:10%;
+    left: 10%;
+    top: 10%;
+  }
+  #mc_embed_signup{
+    background:#FFF;
+    border-radius: 6px;
+    font:14px;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    top:30%;
+  }
+  #poster{
+    position: absolute;
+    bottom:25px;
+    left:45%;
+    width: 10%;
+  }
+  .orig-poster{
+    position: absolute;
+    bottom:25px;
+    left:45%;
+    width: 10%;
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body style="background-color:black; overflow:hidden">
+
+<div style="height:100%; width:100%; overflow-y:hidden; overflow-x: hidden;;text-align:center">
+  <!-- Begin Mailchimp Signup Form -->
+
+<div id="mc_embed_signup">
+<form action="https://stmparty.us20.list-manage.com/subscribe/post?u=ad49a3eb93645cf746b129d6c&amp;id=6d636b25ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h1>Hey Commuters!</h1>
+  <h3>Stay in the loop about STM events</h3>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address </label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ad49a3eb93645cf746b129d6c_6d636b25ee" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<div id="poster" style="display:none">
+  <img style="width:100%; height:100%" src="tunnelvision003.jpg" alt="Tunnel Vision" onclick="expand(this);">
+  <span id="close-photo" style="display: none" onclick="minimize(this)" class="closebtn">&times;</span>
+</div>
+<!--End mc_embed_signup-->
+<img style="height:auto; max-width:100%; overflow: hidden" src="deleglise_crop.jpg">
+<div id="upcoming-event">
+  <img style="height:600px;width:auto"src="busnobubble.jpg">
+</div>
+<div id="past-events">
+    <!-- The grid: four columns -->
+  <div class="row">
+    <div class="column">
+      <img width="100px" src="tunnelvision003.jpg" alt="Tunnel Vision" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img width="100px"src="TEE poster3.png" alt="TEE" onclick="myFunction(this);">
+    </div>
+    <div class="column">
+      <img width="100px"src="busnobubble.jpg" alt="stm361" onclick="myFunction(this);">
+    </div>
+  </div>
+
+  <!-- The expanding image container -->
+  <div class="container">
+    <!-- Close the image -->
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+    <!-- Expanded image -->
+    <img id="expandedImg" style="width:100%">
+
+    <!-- Image text -->
+    <div id="imgtext"></div>
+  </div>
+  </div>
 </div>
 
 
+<script>
+function minimize(image) {
+  document.getElementById("poster").class = "orig-poster";
+  image.style.display="none";
+}
+function expand(image) {
+  image.parentElement.style.width = "40%";
+  image.parentElement.style.left = "30%";
+  image.parentElement.style.bottom = "20px";
+  document.getElementById("close-photo").style.display="block";
+}
+function myFunction(imgs) {
+  imgs.style.width = "40%";
+  imgs.style.left = "30%";
+  imgs.style.bottom = "20px";
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
 
+}
+</script>
 </body>
