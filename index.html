@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="https://www.freeiconspng.com/uploads/subway-icon-png-3.png">
 <link href="stmmontreal_bold-webfont.eot">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style>
   @font-face {
     font-family: 'stm_montreal';
@@ -105,19 +106,24 @@
     text-align: center;
     position: absolute;
     left: 30%;
-    top:30%;
-  }
-  #poster{
-    position: absolute;
-    bottom:25px;
-    left:45%;
-    width: 10%;
+    top:20%;
   }
   .orig-poster{
     position: absolute;
     bottom:25px;
     left:45%;
     width: 10%;
+  }
+  .orig-poster:hover{
+    border: 2px;
+    border-radius: 6px;
+    border-color: gray;
+  }
+  .expand-poster{
+    position: absolute;
+    bottom:45px;
+    left:30%;
+    width: 40%;
   }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -129,10 +135,10 @@
 <div id="mc_embed_signup">
 <form action="https://stmparty.us20.list-manage.com/subscribe/post?u=ad49a3eb93645cf746b129d6c&amp;id=6d636b25ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<h1>Hey Commuters!</h1>
+	<h1>Hey commuters!</h1>
   <h3>Stay in the loop about STM events</h3>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address </label>
+	<label for="mce-EMAIL">Email address </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 	<div id="mce-responses" class="clear">
@@ -144,8 +150,8 @@
     </div>
 </form>
 </div>
-<div id="poster" style="display:none">
-  <img style="width:100%; height:100%" src="tunnelvision003.jpg" alt="Tunnel Vision" onclick="expand(this);">
+<div id="poster" class="expand-poster">
+  <img style="width:100%; height:100%; border-radius:6px" src="tunnel vision2.jpg" alt="Tunnel Vision">
   <span id="close-photo" style="display: none" onclick="minimize(this)" class="closebtn">&times;</span>
 </div>
 <!--End mc_embed_signup-->
@@ -183,31 +189,13 @@
 
 
 <script>
-function minimize(image) {
-  document.getElementById("poster").class = "orig-poster";
-  image.style.display="none";
+function minimize(button) {
+  $(button).parent(removeClass("expand-poster").addClass("orig-poster"));
+  $(button).hide();
 }
 function expand(image) {
-  image.parentElement.style.width = "40%";
-  image.parentElement.style.left = "30%";
-  image.parentElement.style.bottom = "20px";
+  $("poster").removeClass("orig-poster"),addClass("expand-poster");
   document.getElementById("close-photo").style.display="block";
-}
-function myFunction(imgs) {
-  imgs.style.width = "40%";
-  imgs.style.left = "30%";
-  imgs.style.bottom = "20px";
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-
 }
 </script>
 </body>
