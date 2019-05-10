@@ -66,7 +66,6 @@
     top: 5%;
   }
   #upcoming-events{
-    display: none;
     position: absolute;
     width: 23%;
     right: 3%;
@@ -91,6 +90,13 @@
     left: 25%;
     width: 50%;
   }
+  .expand-poster-rotate{
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 30%;
+  }
   #displayed-poster {
     width: 100%;
     border-radius: 6px;
@@ -102,6 +108,13 @@
   .old-poster:hover {
     border-color: #d0d0d0;
   }
+  .rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <body>
@@ -172,8 +185,8 @@
     <li class="old-poster">
       <img width="100%"src="TEE poster3.png" alt="TEE" onclick="expand(this);">
     </li>
-    <li class="old-poster">
-      <img width="100%"src="busnobubble.jpg" alt="stm361" onclick="expand(this);">
+    <li class="old-poster rotateimg90" style="margin-top: -10%">
+      <img width="80%" src="atlantis.JPG" alt="stm361" onclick="expandRotate(this);">
     </li>
   </ul>
 </div>
@@ -183,7 +196,7 @@
       <p>Upcoming Events</p>
     </li>
     <li class="old-poster">
-      <img width="100%" src="STM bliz.jpg" alt="Blizzarts" onclick="expand(this)">
+      <img width="70%" src="block-party.png" alt="Block Party" onclick="expandRotate(this)">
     </li>
   </ul>
 </div>
@@ -199,6 +212,13 @@ function expand(image) {
   document.getElementById("displayed-poster").src = image.src;
   $(".closebtn").show();
   $(".expand-poster").show();
+  $("#mc-embed-signup").hide();
+}
+function expandRotate(image) {
+  document.getElementById("displayed-poster").src = image.src;
+  $("#poster").addClass("expand-poster-rotate");
+  $(".closebtn").show();
+  $(".expand-poster-rotate").show();
   $("#mc-embed-signup").hide();
 }
 </script>
