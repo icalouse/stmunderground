@@ -121,11 +121,12 @@
   <!-- Begin Mailchimp Signup Form -->
 
 <div id="mc-embed-signup">
+  <span id="close-signup" onclick="hideSignup(this)" class="closebtn">&times;</span>
 <form action="https://stmparty.us20.list-manage.com/subscribe/post?u=ad49a3eb93645cf746b129d6c&amp;id=6d636b25ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	<h1>Attention commuters!</h1>
   <h3 style="color:#e0d215">Stay tuned for upcoming events</h3>
-  <h3>Coming to you from the underground</h3>
+  <h3>And subscribe for event location details ;)</h3>
 <div class="mc-field-group">
 	<label style="color:#FFF" for="mce-EMAIL">Email address </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
@@ -169,8 +170,8 @@
   <img id="displayed-poster" src="STM bliz.jpg" alt="poster">
   <span id="close-photo" style="display: none" onclick="minimize(this)" class="closebtn">&times;</span>
 </div>
-<!--End mc_embed_signup-->
-<img style="height:auto; max-width:89%; overflow: hidden" src="deleglise.jpg">
+<!--End mc_embed_signup <img style="height:auto; max-width:89%; overflow: hidden" src="deleglise.jpg">-->
+<img style="height:auto; max-width:88%; overflow: hidden" src="sinusoidal.gif">
 <div id="past-events">
   <ul style="list-style: none;">
     <li>
@@ -179,14 +180,14 @@
     <li class="old-poster">
       <img width="100%" src="STM bliz.jpg" alt="Blizzarts" onclick="expand(this);">
     </li>
+    <li class="old-poster rotateimg90" style="margin-top: -10%; margin-bottom: -8%">
+      <img width="80%" src="atlantis.JPG" alt="stm361" onclick="expandRotate(this);">
+    </li>
     <li class="old-poster">
       <img width="100%" src="tunnelvision003.jpg" alt="Tunnel Vision" onclick="expand(this);">
     </li>
     <li class="old-poster">
       <img width="100%"src="TEE poster3.png" alt="TEE" onclick="expand(this);">
-    </li>
-    <li class="old-poster rotateimg90" style="margin-top: -10%">
-      <img width="80%" src="atlantis.JPG" alt="stm361" onclick="expandRotate(this);">
     </li>
   </ul>
 </div>
@@ -203,6 +204,9 @@
 
 
 <script>
+function hideSignup(button) {
+  $("#mc-embed-signup").hide();
+}
 function minimize(button) {
   $(".expand-poster").hide();
   $(button).hide();
