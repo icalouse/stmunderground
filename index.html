@@ -185,8 +185,8 @@
     <li>
       <p>Past Events</p>
     </li>
-    <li class="old-poster">
-      <img width="100%" src="STM bliz.jpg" alt="Blizzarts" onclick="expand(this);">
+    <li class="old-poster rotateimg90" style="margin-top: -20%; margin-bottom: -24%">
+      <img width="60%" src="block-party.png" alt="block party" onclick="expandRotate(this);">
     </li>
     <li class="old-poster rotateimg90" style="margin-top: -10%; margin-bottom: -8%">
       <img width="80%" src="atlantis.JPG" alt="stm361" onclick="expandRotate(this);">
@@ -203,9 +203,6 @@
   <ul style="list-style: none;">
     <li>
       <p>Upcoming Events</p>
-    </li>
-    <li class="old-poster">
-      <img width="70%" src="block-party.png" alt="Block Party" onclick="expandRotate(this)">
     </li>
     <li class="old-poster">
       <img width="100%"src="blizz2.png" alt="blizzarts2" onclick="expand(this);">
@@ -225,6 +222,7 @@ function minimize(button) {
 }
 function expand(image) {
   document.getElementById("displayed-poster").src = image.src;
+  $("#poster").removeClass("expand-poster-rotate");
   $(".closebtn").show();
   $(".expand-poster").show();
   $("#mc-embed-signup").hide();
