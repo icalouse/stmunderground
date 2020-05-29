@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<title>SubTerranean Music</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://www.freeiconspng.com/uploads/subway-icon-png-3.png">
+<link href="stmmontreal_bold-webfont.eot">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>
+  @font-face {
+    font-family: 'stm_montreal';
+    src: url('stmmontreal_bold-webfont.eot');
+    src: url('stmmontreal_regular-webfont.woff') format('woff');
+  }
+  body {
+    font-family: 'stm_montreal', sans-serif;
+    color: #009EE0;
+    background-color: black;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 22%;
+    color: #d0d0d0;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  input[type=submit] {
+    background-color: #009EE0;
+    border: 1px;
+    border-radius: 6px;
+    text-align: center;
+    color: #e0d215;
+    font-size: 14;
+    font-family: 'stm_montreal';
+    display: inline-block;
+    margin: 12px;
+    height: 36px;
+    width: 96px;
+  }
+  input[type=submit]:hover{
+    background-color: #0088c1;
+  }
+  #tracks {
+    position: absolute;
+    bottom: 2%;
+    width: 60%;
+    margin-left: 20%
+  }
+  .tracks-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .track-column {
+    float: left;
+    display: table-cell;
+  }
+  #past-events{
+    position: absolute;
+    width:18%;
+    left: 1%;
+    top: 5%;
+  }
+  #upcoming-events{
+    position: absolute;
+    width: 18%;
+    right: 1%;
+    top: 5%;
+  }
+  #mc-embed-signup{
+    background:rgba(20,20,20,0.5);
+    border-radius: 6px;
+    padding: 12px;
+    font:14px;
+    width: 40%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    left: 29%;
+    top:15%;
+  }
+  .expand-poster{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    display: none;
+  }
+  .expand-poster-rotate{
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 30%;
+  }
+  #displayed-poster {
+    width: 60%;
+    border-radius: 6px;
+  }
+  .old-poster {
+    border-radius: 6px;
+    border: solid transparent 1px;
+  }
+  .old-poster:hover {
+    border-color: #d0d0d0;
+  }
+  .rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+@media screen and (max-width: 700px) {
+  #tracks {
+    display: none;
+  }
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+  <!-- Begin Mailchimp Signup Form -->
+
+<div id="mc-embed-signup">
+  <span id="close-signup" onclick="hideSignup(this)" class="closebtn">&times;</span>
+<form action="https://stmparty.us20.list-manage.com/subscribe/post?u=ad49a3eb93645cf746b129d6c&amp;id=6d636b25ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h1>Attention commuters!</h1>
+  <h3 style="color:#e0d215">Stay tuned for upcoming events</h3>
+  <h3>SUBSCRIBE SUBSCRIBE SUBSCRIBE 🚇🚇🚇</h3>
+<div class="mc-field-group">
+	<label style="color:#FFF" for="mce-EMAIL">Email address </label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ad49a3eb93645cf746b129d6c_6d636b25ee" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<div id="tracks">
+  <div class="tracks-row">
+    <!-- 300px wide!! -->
+    <div class="track-column">
+      <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fn10as%2F03_29_2019_2_harmony-expressmp3%2F" frameborder="0" ></iframe>
+    </div>
+    <div class="track-column">
+      <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fsubterraneandjs%2Fharmony-express-on-ckut-w-dj-robay-mpm10-012219%2F" frameborder="0" ></iframe>
+    </div>
+    <div class="track-column">
+      <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fsubterraneandjs%2Fdariush-b2b-deadlift-in-the-stm-boiler-room%2F" frameborder="0" ></iframe>
+    </div>
+  </div>
+  <div class="tracks-row">
+    <!-- 300px wide!! -->
+    <div class="track-column">
+      <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fsubterraneandjs%2Fmay-the-4th-be-with-you%2F" frameborder="0" ></iframe>
+    </div>
+    <div class="track-column">
+      <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fsubterraneandjs%2Fmpm10-b2b-dariush-april-11th-sore-throat-mix%2F" frameborder="0" ></iframe>
+    </div>
+    <div class="track-column">
+      <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Fn10as%2F03_31_2019_dariushmp3%2F" frameborder="0" ></iframe>
+    </div>
+  </div>
+</div>
+<div id="poster" class="expand-poster">
+  <img id="displayed-poster" src="opus-final.png" alt="poster">
+  <span id="close-photo" onclick="minimize(this)" class="closebtn">&times;</span>
+</div>
+<!--End mc_embed_signup <img style="height:auto; max-width:89%; overflow: hidden" src="deleglise.jpg">-->
+<img style="height:auto; max-width:88%; overflow: hidden" src="sinusoidal.gif">
+<div id="past-events">
+  <ul style="list-style: none;">
+    <li>
+      <p>Past Events</p>
+    </li>
+    <li class="old-poster rotateimg90" style="margin-top: -20%; margin-bottom: -24%">
+      <img width="60%" src="block-party.png" alt="block party" onclick="expandRotate(this);">
+    </li>
+    <li class="old-poster rotateimg90" style="margin-top: -10%; margin-bottom: -8%">
+      <img width="80%" src="atlantis.JPG" alt="stm361" onclick="expandRotate(this);">
+    </li>
+    <li class="old-poster">
+      <img width="100%" src="tunnelvision003.jpg" alt="Tunnel Vision" onclick="expand(this);">
+    </li>
+    <li class="old-poster">
+      <img width="100%"src="TEE poster3.png" alt="TEE" onclick="expand(this);">
+    </li>
+  </ul>
+</div>
+<div id="upcoming-events">
+  <ul style="list-style: none;">
+    <li>
+      <p>Past Events</p>
+    </li>
+    <li class="old-poster">
+      <img width="90%"src="opus-final.png" alt="blizzarts2" onclick="expand(this);">
+    </li>
+    <li class="old-poster">
+      <img width="90%"src="blizz2.png" alt="blizzarts2" onclick="expand(this);">
+    </li>
+    <li class="old-poster">
+      <img width="100%"src="STM bliz.jpg" alt="blizzarts2" onclick="expand(this);">
+    </li>
+    <li class="old-poster">
+      <img width="90%"src="busnobubble.jpg" alt="blizzarts2" onclick="expand(this);">
+    </li>
+  </ul>
+</div>
+
+
+<script>
+function hideSignup(button) {
+  $("#mc-embed-signup").hide();
+}
+function minimize(button) {
+  $(".expand-poster").hide();
+  $(button).hide();
+  $("#mc-embed-signup").show();
+}
+function expand(image) {
+  document.getElementById("displayed-poster").src = image.src;
+  $("#poster").removeClass("expand-poster-rotate");
+  $(".closebtn").show();
+  $(".expand-poster").show();
+  $("#mc-embed-signup").hide();
+}
+function expandRotate(image) {
+  document.getElementById("displayed-poster").src = image.src;
+  $("#poster").addClass("expand-poster-rotate");
+  $(".closebtn").show();
+  $(".expand-poster-rotate").show();
+  $("#mc-embed-signup").hide();
+}
+function showMap() {
+  document.getElementById("displayed-poster").src = "opus-final.png";
+  //$("#displayed-poster").css("width", "70%");
+  $(".closebtn").show();
+  $(".expand-poster").show();
+  $("#mc-embed-signup").hide();
+}
+</script>
+</body>

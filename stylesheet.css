@@ -3,6 +3,9 @@
   src: url('stmmontreal_bold-webfont.eot');
   src: url('stmmontreal_regular-webfont.woff') format('woff');
 }
+a {
+  color: inherit;
+}
 body {
   font-family: 'stm_montreal', sans-serif;
   color: #009EE0;
@@ -28,7 +31,7 @@ input[type=submit] {
   font-size: 18;
   font-family: 'stm_montreal';
   display: inline-block;
-  margin: 12px;
+  margin: 18px;
   height: 36px;
   width: 96px;
 }
@@ -36,9 +39,11 @@ input[type=submit]:hover{
   background-color: #0088c1;
 }
 #subscribeContainer {
+  display: block;
   left: 35%;
   top: 38%;
   position: absolute;
+  height: 200px;
 }
 #mc-embed-signup {
   text-align: center;
@@ -158,4 +163,145 @@ input[type=submit]:hover{
 }
 .grow {
   max-height: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    background: #C3BD15 url("stm_web1.png")no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+  #subscribeContainer {
+    display: block;
+    position: fixed;
+    width: 98%;
+    left: 5px;
+    top: 80px;
+    height: 25%;
+  }
+  #mc-embed-signup {
+    text-align: center;
+  }
+  #posterContainer {
+    position: fixed;
+    width: 98%;
+    left: 5px;
+    top: 80px;
+    height: 80%;
+  }
+  #posterWindow {
+    height: 100%;
+    width: 100%;
+  }
+  #mixcloudContainer {
+    width: 98%;
+    left: 5px;
+    top: 80px;
+    position: fixed;
+  }
+  #expandPosterWindow {
+    width: 0%;
+    height: 0%;
+    top: 5000px;
+    left: 5000px;
+    vertical-align: bottom;
+    text-align: right;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+  }
+  #expandPosterWindow:hover {
+    cursor: zoom-out;
+  }
+  #expandPosterImage {
+
+  }
+  .scrollable {
+    overflow: scroll;
+    height: 100%;
+    text-align: center;
+  }
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+  .container {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 98%;
+    left: 5px;
+    top: 75px;
+    padding: 0px;
+    height: 80%;
+  }
+  .close {
+  	position: absolute;
+  	font-weight: bold;
+  	top: 0.5em;
+  	right: 0.5em;
+    color: #009EE0;
+    font-size: 24px;
+    text-decoration: none;
+  }
+  .close:hover {
+    color: #009EE0;
+    cursor: zoom-out;
+  }
+  .mixcloudRow {
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 4px;
+    width: 91%;
+  }
+  .posterRow {
+    padding-top: 8px;
+  }
+  .posterRow:hover {
+    cursor: zoom-in;
+  }
+  #linkBar {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .linkColumn {
+    float: left;
+    display: table-cell;
+    font-size: 20px;
+  }
+  .linkColumn:hover {
+    color: #0088c1;
+    cursor: zoom-in;
+  }
+  #aboutContainer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    overflow-y: hidden;
+    background: linear-gradient(to top, #C3BD15, #C3BD15 95%, transparent 98%);
+  }
+  #aboutBar {
+    position: relative;
+    font-size: 20px;
+  }
+  #aboutBar:hover {
+    color: #0088c1;
+    cursor: zoom-in;
+  }
+  .shrink, .grow {
+    max-height: 0;
+    overflow-y: hidden;
+    -webkit-transition: max-height 500ms ease-in-out;
+    -moz-transition: max-height 500ms ease-in-out;
+    -o-transition: max-height 500ms ease-in-out;
+    transition: max-height 500ms ease-in-out;
+  }
+  .grow {
+    max-height: 200px;
+  }
 }
