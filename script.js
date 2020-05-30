@@ -27,7 +27,9 @@ $(function() {
 			$(this).parent().hide();
 			if ($(this).parent().attr('id') == 'streamContainer') {
 				myaudio.pause();
-				$('#streamImage').src = "stm-metro-mono.svg";
+				init = false;
+				console.log('should switch image back');
+				document.getElementById("streamImage").src = "stm-metro-mono.svg";
 			}
 			event.preventDefault();
 		});
@@ -82,3 +84,11 @@ function play() {
 		document.getElementById("streamImage").src = "mute.svg";
 	}
 }
+var checktime = setInterval(function() {
+		if (myaudio.ended === true){
+			console.log('Trying to reconnect...');
+			myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
+			myaudio.play();
+		}
+	}, 1000);
+checktime();

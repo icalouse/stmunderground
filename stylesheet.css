@@ -48,6 +48,17 @@ input[type=submit]:hover{
 #mc-embed-signup {
   text-align: center;
 }
+#defaultContainer {
+  color: #fff;
+  display: block;
+  height: auto;
+  width: 400px;
+  left: 40%;
+  text-align: center;
+}
+#defaultContainer a {
+  color: #009EE0;
+}
 #posterContainer {
   height: 500px;
   width: 420px;
@@ -191,11 +202,17 @@ input[type=submit]:hover{
     position: fixed;
     width: 98%;
     left: 5px;
-    top: 80px;
+    top: 58%;
     height: 25%;
   }
   #mc-embed-signup {
     text-align: center;
+  }
+  #defaultContainer {
+    padding: 25px;
+    width: 90%;
+    top: 30%;
+    left: 5px;
   }
   #posterContainer {
     position: fixed;
@@ -322,6 +339,6 @@ input[type=submit]:hover{
     transition: max-height 500ms ease-in-out;
   }
   .grow {
-    max-height: 200px;
+    max-height: 300px;
   }
 }
