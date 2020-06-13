@@ -308,7 +308,7 @@ input[type=submit]:hover{
   .linkColumn {
     float: left;
     display: table-cell;
-    font-size: 20px;
+    font-size: 18px;
   }
   .linkColumn:hover {
     color: #0088c1;
