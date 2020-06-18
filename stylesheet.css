@@ -39,7 +39,7 @@ input[type=submit]:hover{
   filter: brightness(90%);
 }
 #subscribeContainer {
-  display: block;
+  display: none;
   left: 35%;
   top: 38%;
   position: absolute;
@@ -50,14 +50,20 @@ input[type=submit]:hover{
 }
 #defaultContainer {
   color: #fff;
-  display: none;
-  height: auto;
-  width: 400px;
-  left: 40%;
-  text-align: center;
+  display: block;
+  height: 480px;
+  left: 30%;
+  width: 550px;
+  text-align: justify;
 }
 #defaultContainer a {
   color: #009EE0;
+}
+#defaultContainer li {
+  font-size: 14px;
+}
+#defaultWindow {
+  height: 100%;
 }
 #posterContainer {
   height: 500px;
@@ -106,7 +112,7 @@ input[type=submit]:hover{
 }
 .container {
   display: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 6px;
   width: 420px;
   padding: 25px;
@@ -198,7 +204,6 @@ input[type=submit]:hover{
     background-size: contain;
   }
   #subscribeContainer {
-    display: block;
     position: fixed;
     width: 98%;
     left: 5px;
@@ -209,10 +214,12 @@ input[type=submit]:hover{
     text-align: center;
   }
   #defaultContainer {
-    display: none;
-    padding: 25px;
-    width: 90%;
-    top: 30%;
+    display: block;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 76%;
+    width: 86%;
+    top: 10%;
     left: 5px;
   }
   #posterContainer {
