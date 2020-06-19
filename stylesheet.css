@@ -52,7 +52,9 @@ input[type=submit]:hover{
   color: #fff;
   display: block;
   height: 480px;
-  left: 30%;
+  left: 10%;
+  position: absolute;
+  top: 13%;
   width: 550px;
   text-align: justify;
 }
@@ -62,8 +64,21 @@ input[type=submit]:hover{
 #defaultContainer li {
   font-size: 14px;
 }
+#defaultImageContainer {
+  display: block;
+  left: 62%;
+  position: absolute;
+  top: 13%;
+  height: 472px;
+}
 #defaultWindow {
   height: 100%;
+}
+#defaultImageWindow {
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 18px;
 }
 #posterContainer {
   height: 500px;
@@ -221,6 +236,9 @@ input[type=submit]:hover{
     width: 86%;
     top: 10%;
     left: 5px;
+  }
+  #defaultImageContainer {
+    display: none;
   }
   #posterContainer {
     position: fixed;
