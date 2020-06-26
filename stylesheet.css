@@ -73,12 +73,27 @@ input[type=submit]:hover{
 }
 #defaultWindow {
   height: 100%;
+  margin-top: -10px;
 }
 #defaultImageWindow {
   height: 100%;
   width: 100%;
   color: white;
   font-size: 18px;
+}
+#agreeButton {
+  background-color: #009EE0;
+  border: 1px;
+  border-radius: 6px;
+  text-align: center;
+  color: #e0d215;
+  padding: 5px;
+}
+#defaultMapWindow {
+  display: none;
+}
+#googleMap {
+  display: none;
 }
 #posterContainer {
   height: 500px;
@@ -232,6 +247,8 @@ input[type=submit]:hover{
     display: block;
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     height: 76%;
     width: 86%;
     top: 10%;
@@ -333,7 +350,7 @@ input[type=submit]:hover{
   .linkColumn {
     float: left;
     display: table-cell;
-    font-size: 18px;
+    font-size: 15px;
   }
   .linkColumn:hover {
     color: #0088c1;

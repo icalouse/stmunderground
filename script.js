@@ -33,9 +33,12 @@ $(function() {
 			}
 			event.preventDefault();
 		});
+		$('#agreeButton').click(function(event) {
+			$('#defaultWindow').hide();
+			$('#defaultMapWindow').show();
+		});
 
-
-		if (screen.width > 1000) {
+		if (screen.width > 800) {
 		$('.posterRow').click(function(event) {
 			var imageSrc = $(this).find('img').attr('src').replace(/-thumb/, '');
 			console.log(imageSrc);
@@ -46,7 +49,9 @@ $(function() {
 		$('#expandPosterWindow').click(function(event) {
 			$('#expandPosterWindow').hide();
 		});
-
+		$('#pngMap').hide();
+		$('#mapText').hide();
+		$('#googleMap').show();
 		$('.draggable').draggable({
 			start: function() {
 			},
