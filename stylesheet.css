@@ -69,7 +69,7 @@ input[type=submit]:hover{
   left: 62%;
   position: absolute;
   top: 13%;
-  height: 472px;
+  height: 500px;
 }
 #defaultWindow {
   height: 100%;
@@ -139,6 +139,11 @@ input[type=submit]:hover{
 }
 .scrollable::-webkit-scrollbar {
   display: none;
+}
+.scrollablex {
+  overflow: auto;
+  height: 270px;
+  white-space: nowrap;
 }
 .container {
   display: none;
