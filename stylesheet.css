@@ -65,7 +65,7 @@ input[type=submit]:hover{
   font-size: 14px;
 }
 #defaultImageContainer {
-  display: block;
+  display: none;
   left: 62%;
   position: absolute;
   top: 13%;
