@@ -64,6 +64,9 @@ input[type=submit]:hover{
 #defaultContainer li {
   font-size: 14px;
 }
+#defaultContainer h3 {
+  color: #009EE0;
+}
 #defaultImageContainer {
   display: none;
   left: 62%;
@@ -91,6 +94,7 @@ input[type=submit]:hover{
 }
 #defaultMapWindow {
   display: none;
+  height: 100%;
 }
 #googleMap {
   display: none;
