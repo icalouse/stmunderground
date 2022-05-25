@@ -37,7 +37,17 @@ $(function() {
 			$('#defaultWindow').hide();
 			$('#defaultMapWindow').show();
 		});
-
+		$('.ticketButton').click(function(event) {
+			window.location.href = $(this).attr('href');
+		});
+		$('#switchEventButton1').click(function(event) {
+			$('#eventContainer1').hide();
+			$('#eventContainer2').show();
+		});
+	$('#switchEventButton2').click(function(event) {
+		$('#eventContainer2').hide();
+		$('#eventContainer1').show();
+	});
 		if (screen.width > 800) {
 		$('.posterRow').click(function(event) {
 			var imageSrc = $(this).find('img').attr('src').replace(/-thumb/, '');
@@ -62,7 +72,7 @@ $(function() {
 });
 
 //open stream from VPS
-var myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
+var myaudio = new Audio('https://ckut.out.airtime.pro/ckut_a');
 //determines if audio has been initialized
 let init = false;
 //streaming status
@@ -92,7 +102,7 @@ function play() {
 var checktime = setInterval(function() {
 		if (myaudio.ended === true){
 			console.log('Trying to reconnect...');
-			myaudio = new Audio('http://rhizotron.net:8080/listen.mp3');
+			myaudio = new Audio('https://ckut.out.airtime.pro/ckut_a');
 			myaudio.play();
 		}
 	}, 1000);

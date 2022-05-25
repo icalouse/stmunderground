@@ -48,9 +48,19 @@ input[type=submit]:hover{
 #mc-embed-signup {
   text-align: center;
 }
-#defaultContainer {
+#eventContainer1 {
+  left: 12%;
+  position: absolute;
+  top: 13%;
+}
+#eventContainer2 {
+  right: 12%;
+  position: absolute;
+  top: 13%;
+}
+#hippodromeContainer {
   color: #fff;
-  display: block;
+  display: none;
   height: 480px;
   left: 28%;
   position: absolute;
@@ -58,13 +68,13 @@ input[type=submit]:hover{
   width: 550px;
   text-align: justify;
 }
-#defaultContainer a {
+#hippodromeContainer a {
   color: #009EE0;
 }
-#defaultContainer li {
+#hippodromeContainer li {
   font-size: 14px;
 }
-#defaultContainer h3 {
+#hippodromeContainer h3 {
   color: #009EE0;
 }
 #defaultImageContainer {
@@ -157,6 +167,12 @@ input[type=submit]:hover{
   padding: 25px;
   height: 270px;
 }
+.eventContainer {
+  color: #fff;
+  display: inline;
+  height: auto;
+  padding-top: 25px;
+}
 .close {
 	position: absolute;
 	font-weight: bold;
@@ -191,6 +207,34 @@ input[type=submit]:hover{
   display: flex;
   justify-content: space-between;
 }
+.eventWindow {
+  height: 100%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button {
+  background-color: #009EE0;
+  border: 1px;
+  border-radius: 6px;
+  text-align: center;
+  color: #e0d215;
+  padding: 10px;
+}
+.ticketButton {
+  border: 1px;
+  width: 35%;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 3%;
+}
+.ticketButton:hover {
+  cursor: pointer;
+}
+.switchButton {
+   display: none;
+ }
 .linkColumn {
   float: left;
   display: table-cell;
@@ -252,8 +296,37 @@ input[type=submit]:hover{
   #mc-embed-signup {
     text-align: center;
   }
-  #defaultContainer {
+  .eventContainer {
+    top: 20%;
+  }
+  #eventContainer1 {
+    top: auto;
+    left: auto;
+  }
+  #eventContainer2 {
+    display: none;
+  }
+  .buttonBar {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+  }
+  .switchButton {
     display: block;
+    border: 1px;
+    width: 48%;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 3%;
+  }
+  .switchButton:hover {
+    cursor: pointer;
+  }
+  #hippodromeContainer {
+    display: none;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 10px;
@@ -324,6 +397,12 @@ input[type=submit]:hover{
     top: 75px;
     padding: 0px;
     height: 80%;
+  }
+  .eventContainer {
+    color: #fff;
+    display: inline;
+    height: auto;
+    padding-top: 25px;
   }
   .close {
   	position: absolute;
