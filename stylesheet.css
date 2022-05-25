@@ -453,10 +453,12 @@ input[type=submit]:hover{
     background: linear-gradient(to top, #C3BD15, #C3BD15 95%, transparent 98%);
   }
   #aboutBar {
+    display: none;
     position: relative;
     font-size: 20px;
   }
   #aboutBar:hover {
+    display: none;
     color: #0088c1;
     cursor: zoom-in;
   }
