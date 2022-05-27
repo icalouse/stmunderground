@@ -313,7 +313,7 @@ input[type=submit]:hover{
     padding-bottom: 10px;
   }
   .switchButton {
-    display: none;
+    display: block;
     border: 1px;
     width: 48%;
     font-size: 16px;
