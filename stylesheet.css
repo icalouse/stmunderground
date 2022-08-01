@@ -49,11 +49,12 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
-  left: 12%;
+  left: 32%;
   position: absolute;
   top: 13%;
 }
 #eventContainer2 {
+  display: none;
   right: 12%;
   position: absolute;
   top: 13%;
@@ -229,7 +230,7 @@ input[type=submit]:hover{
   padding: 10px;
   margin-top: 3%;
 }
-.ticketButton:hover {
+.button:hover {
   cursor: pointer;
 }
 .switchButton {
@@ -313,7 +314,7 @@ input[type=submit]:hover{
     padding-bottom: 10px;
   }
   .switchButton {
-    display: block;
+    display: none;
     border: 1px;
     width: 48%;
     font-size: 16px;

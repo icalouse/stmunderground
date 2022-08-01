@@ -40,6 +40,9 @@ $(function() {
 		$('.ticketButton').click(function(event) {
 			window.location.href = $(this).attr('href');
 		});
+		$('.subscribeButton').click(function(event) {
+		window.location.href = $(this).attr('href');
+		});
 		$('#switchEventButton1').click(function(event) {
 			$('#eventContainer1').hide();
 			$('#eventContainer2').show();
