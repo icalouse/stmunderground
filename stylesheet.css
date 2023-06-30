@@ -39,7 +39,7 @@ input[type=submit]:hover{
   filter: brightness(90%);
 }
 #subscribeContainer {
-  display: block;
+  display: none;
   left: 35%;
   top: 38%;
   position: absolute;
@@ -49,8 +49,8 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
-  display: none;
-  left: 32%;
+  display: block;
+  left: 36%;
   position: absolute;
   top: 13%;
 }
@@ -207,7 +207,7 @@ input[type=submit]:hover{
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .eventWindow {
   height: 100%;
@@ -289,7 +289,7 @@ input[type=submit]:hover{
     background-size: contain;
   }
   #subscribeContainer {
-    display: block;
+    display: none;
     position: fixed;
     width: 98%;
     left: 5px;
@@ -302,7 +302,7 @@ input[type=submit]:hover{
     top: 20%;
   }
   #eventContainer1 {
-    display: none;
+    display: block;
     top: auto;
     left: auto;
   }
@@ -436,7 +436,7 @@ input[type=submit]:hover{
     margin-left: 5%;
     margin-right: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .linkColumn {
     float: left;
