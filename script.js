@@ -45,7 +45,7 @@ $(function() {
 		});
 		$('#switchEventButton1').click(function(event) {
 			$('#eventContainer1').hide();
-			$('#eventContainer2').show();
+			$('#hippodromeContainer').show();
 		});
 	$('#switchEventButton2').click(function(event) {
 		$('#eventContainer2').hide();
