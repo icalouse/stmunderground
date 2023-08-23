@@ -50,9 +50,9 @@ input[type=submit]:hover{
 }
 #eventContainer1 {
   display: block;
-  left: 36%;
+  left: 32%;
   position: absolute;
-  top: 13%;
+  top: 8%;
 }
 #eventContainer2 {
   display: none;
@@ -242,7 +242,7 @@ input[type=submit]:hover{
   cursor: pointer;
 }
 .switchButton {
-   display: inherit;
+   display: none;
    border: 1px;
    font-size: 16px;
    text-align: center;
@@ -269,7 +269,7 @@ input[type=submit]:hover{
 }
 #aboutBar {
   position: relative;
-  font-size: 24px;
+  font-size: 16px;
 }
 #aboutBar:hover {
   filter: brightness(90%);
@@ -329,7 +329,7 @@ input[type=submit]:hover{
     padding-bottom: 10px;
   }
   .switchButton {
-    display: inherit;
+    display: none;
     border: 1px;
     font-size: 16px;
     text-align: center;
@@ -470,7 +470,7 @@ input[type=submit]:hover{
   #aboutBar {
     display: none;
     position: relative;
-    font-size: 20px;
+    font-size: 16px;
   }
   #aboutBar:hover {
     display: none;
