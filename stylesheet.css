@@ -50,9 +50,9 @@ input[type=submit]:hover{
 }
 #eventContainer1 {
   display: block;
-  left: 32%;
+  left: 35%;
   position: absolute;
-  top: 8%;
+  top: 10%;
 }
 #eventContainer2 {
   display: none;
