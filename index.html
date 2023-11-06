@@ -26,6 +26,7 @@
       <p class="linkColumn" id="openSuscribe">Subscribe</p>
       <p class="linkColumn" id="openMixcloud">Soundcloud</p>
       <p class="linkColumn" id="openPoster">Past Events</p>
+      <p class="linkColumn" id="openRental">Rental</p>
       <p style="display: none" class="linkColumn" id="openStream">Stream</p>
     </div>
     <div id="subscribeContainer" class="container draggable">
@@ -34,8 +35,7 @@
             <h1>Attention commuters!</h1>
             <h3 style="color:#e0d215">Stay tuned for upcoming events</h3>
             <button type="button" class="button subscribeButton" href="https://forms.gle/L96t77xzxiDdPUj46"> Subscribe ️</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
     <div id="eventContainer1" class="container draggable eventContainer">
@@ -214,6 +214,33 @@
     </div>
     <div id="expandPosterWindow">
       <img id="expandPosterImage" src="atlantis.png">
+    </div>
+  </div>
+  <div id="rentalContainer" class="container draggable">
+    <a href="#" class="close">&times;</a>
+    <div style="text-align: center;">
+      <h1>STM Underground Party Rental</h1>
+      <h3 style="color:#e0d215">Services Available:</h3>
+      <div id="rentalList">
+        <ul>
+          <li>Equipment Rental</li>
+          <ul>
+            <li>Speakers</li>
+            <li>DJ Gear</li>
+            <li>Generator + Extensions</li>
+            <li>Beverage & Other party supplies</li>
+          </ul>
+          <li>Transport, Installation & Operation</li>
+          <li>DJ Services</li>
+          <li>Venue Rental (ask for more info)</li>
+          <li>Lighting Rental (ask for more info)</li>
+        </ul>
+        <p>Contact Info: <i id="contactEmail">hidden</i></p>
+      </div>
+      <div class="buttonBar">
+        <button type="button" id="openInventoryButton" class="button"> See Inventory ️</button>
+        <button type="button" id="showContactButton" class="button"> Show Email ️</button>
+      </div>
     </div>
   </div>
   <div id="aboutContainer">

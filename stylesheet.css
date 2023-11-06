@@ -146,6 +146,16 @@ input[type=submit]:hover{
 #expandPosterWindow:hover {
   cursor: zoom-out;
 }
+#rentalContainer {
+  position: relative;
+  width: fit-content;
+  top: 20%;
+  left: 35%;
+  height: fit-content;
+}
+#rentalList {
+  text-align: left;
+}
 #streamContainer {
   height: 200px;
   width: 200px;
@@ -391,6 +401,19 @@ input[type=submit]:hover{
   }
   #expandPosterWindow:hover {
     cursor: zoom-out;
+  }
+  #rentalContainer {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 98%;
+    top: 20%;
+    left: 5px;
+    height: fit-content;
+  }
+  #rentalList {
+    text-align: left;
+    padding-left: 8%;
   }
   #streamContainer {
     padding: 25px;

@@ -11,6 +11,10 @@ $(function() {
 	      $('#posterContainer').show();
 	    event.preventDefault();
 	  });
+	  $('#openRental').click(function(event) {
+		$('#rentalContainer').show();
+	  event.preventDefault();
+	});
 		$('#openStream').click(function(event) {
 				$('#streamContainer').show();
 			event.preventDefault();
@@ -50,6 +54,12 @@ $(function() {
 	$('#switchEventButton2').click(function(event) {
 		$('#eventContainer2').hide();
 		$('#eventContainer1').show();
+	});
+	$('#showContactButton').click(function(event) {
+		$('#contactEmail').first().text( "beaubien365@gmail.com" );
+	});
+	$('#openInventoryButton').click(function(event) {
+		window.open('https://drive.google.com/file/d/1w6wyYMEAIIJwXEfPAzczzFaU6UTO0bW5/view?usp=sharing', '_blank');
 	});
 		if (screen.width > 800) {
 		$('.posterRow').click(function(event) {
