@@ -59,7 +59,7 @@ $(function() {
 		$('#contactEmail').first().text( "beaubien365@gmail.com" );
 	});
 	$('#openInventoryButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/1w6wyYMEAIIJwXEfPAzczzFaU6UTO0bW5/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1Iy1eD1qcysBKHKxoRUQuqeOL-ooMPHkV/view?usp=sharing', '_blank');
 	});
 		if (screen.width > 800) {
 		$('.posterRow').click(function(event) {
