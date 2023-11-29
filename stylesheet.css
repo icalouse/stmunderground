@@ -146,6 +146,13 @@ input[type=submit]:hover{
 #expandPosterWindow:hover {
   cursor: zoom-out;
 }
+#cvContainer {
+  position: relative;
+  width: fit-content;
+  top: 25%;
+  left: 40%;
+  height: fit-content;
+}
 #rentalContainer {
   position: relative;
   width: fit-content;
@@ -218,10 +225,14 @@ input[type=submit]:hover{
   filter: brightness(90%);
   cursor: pointer;
 }
+#hamburger-icon {
+  top: -100%;
+  position: absolute;
+}
 #linkBar {
+  display: flex;
   margin-left: 5%;
   margin-right: 5%;
-  display: flex;
   justify-content: space-evenly;
 }
 .eventWindow {
@@ -402,6 +413,15 @@ input[type=submit]:hover{
   #expandPosterWindow:hover {
     cursor: zoom-out;
   }
+  #cvContainer {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 98%;
+    top: 20%;
+    left: 5px;
+    height: fit-content;
+  }
   #rentalContainer {
     position: fixed;
     padding-top: 10px;
@@ -474,21 +494,52 @@ input[type=submit]:hover{
   .posterRow:hover {
     cursor: zoom-in;
   }
+  #hamburger-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
   #linkBar {
+    top: -100%;
     margin-left: 5%;
     margin-right: 5%;
+    flex-direction: column;
+    align-items: center;
     display: flex;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0%);
     justify-content: space-evenly;
+    transition: top 0.5s ease-in-out; /* Add a smooth transition effect */ 
+    overflow: hidden;
   }
   .linkColumn {
     float: left;
     display: table-cell;
-    font-size: 15px;
+    font-size: 24px;
   }
   .linkColumn:hover {
-    color: #0088c1;
+    filter: brightness(90%);
     cursor: zoom-in;
   }
+  .show-linkBar {
+    top: 0;
+    transition: top 0.5s ease-in-out; /* Add a smooth transition effect */ 
+  }
+  /* .linkColumn {
+    float: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  } */
+  /* .linkColumn:hover {
+    color: #0088c1;
+    cursor: zoom-in;
+  } */
   #aboutContainer {
     width: 100%;
     position: fixed;

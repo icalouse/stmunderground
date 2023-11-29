@@ -1,4 +1,15 @@
 $(function() {
+	  // Toggle linkBar visibility when hamburger icon is clicked
+	  $('#hamburger-icon').click(function(event) {
+		$('#linkBar').toggleClass('show-linkBar');
+		console.log($('#linkBar').css("top"));
+		if ($('#linkBar').css("top").charAt(0) == "-") {
+			$('#linkBar').css("top","0");
+		} else {
+			$('#linkBar').css("top","-100%");
+		}
+		event.preventDefault();
+	  });
 		$('#openSuscribe').click(function(event) {
 		    $('#subscribeContainer').show();
 			event.preventDefault();
@@ -11,6 +22,10 @@ $(function() {
 	      $('#posterContainer').show();
 	    event.preventDefault();
 	  });
+	  $('#openCV').click(function(event) {
+		$('#cvContainer').show();
+	  event.preventDefault();
+	});
 	  $('#openRental').click(function(event) {
 		$('#rentalContainer').show();
 	  event.preventDefault();
@@ -54,6 +69,12 @@ $(function() {
 	$('#switchEventButton2').click(function(event) {
 		$('#eventContainer2').hide();
 		$('#eventContainer1').show();
+	});
+	$('#openOrganizerCVButton').click(function(event) {
+		window.open('https://drive.google.com/file/d/1LFsPXESbbciCS0LyWidp9g8P7Z_94exC/view?usp=sharing', '_blank');
+	});
+	$('#openDJCVButton').click(function(event) {
+		window.open('https://drive.google.com/file/d/15uWfRflbe_HosLmgMAT1xPbh0f-12Mla/view?usp=sharing', '_blank');
 	});
 	$('#showContactButton').click(function(event) {
 		$('#contactEmail').first().text( "beaubien365@gmail.com" );

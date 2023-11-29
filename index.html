@@ -22,10 +22,12 @@
 </head>
 <body>
   <div>
+    <div id="hamburger-icon">&#9776;</div>
     <div id="linkBar">
       <p class="linkColumn" id="openSuscribe">Subscribe</p>
-      <p class="linkColumn" id="openMixcloud">Soundcloud</p>
       <p class="linkColumn" id="openPoster">Past Events</p>
+      <p class="linkColumn" id="openMixcloud">Soundcloud</p>
+      <p class="linkColumn" id="openCV">CV</p>
       <p class="linkColumn" id="openRental">Rental</p>
       <p style="display: none" class="linkColumn" id="openStream">Stream</p>
     </div>
@@ -121,35 +123,6 @@
         <image id="streamImage" type="image" src="stm-metro-mono.svg" onclick ="play()">
       </a>
     </div>
-    <div id="mixcloudContainer" class="container draggable">
-      <a href="#" class="close">&times;</a>
-      <div id=mixcloudWindow class="scrollable">
-        <div class="mixcloudRow">
-          <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/827880412&color=%23009ee0&auto_play=false&hide_related=true&show_comments=true&show_user=false"></iframe>
-        </div>
-        <div class="mixcloudRow">
-          <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1511199130&color=%23009ee0&inverse=false&auto_play=false&show_user=false&show_comments=true"></iframe>
-        </div>
-        <div class="mixcloudRow">
-          <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1102251613&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
-        </div>
-        <div class="mixcloudRow">
-          <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475923060&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
-        </div>
-        <div class="mixcloudRow">
-          <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1351625251&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
-        </div>
-        <div class="mixcloudRow">
-          <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1313664535&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
-        </div>
-        <div class="mixcloudRow">
-        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1143804811&color=%23009ee0&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-        </div>
-        <div class="mixcloudRow">
-          <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1253685268&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
-        </div>
-      </div>
-    </div>
     <div id="posterContainer" class="container draggable">
       <a href="#" class="close">&times;</a>
       <div id="posterWindow" class="scrollable">
@@ -214,6 +187,46 @@
     </div>
     <div id="expandPosterWindow">
       <img id="expandPosterImage" src="atlantis.png">
+    </div>
+  </div>
+  <div id="mixcloudContainer" class="container draggable">
+    <a href="#" class="close">&times;</a>
+    <div id=mixcloudWindow class="scrollable">
+      <div class="mixcloudRow">
+        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/827880412&color=%23009ee0&auto_play=false&show_comments=true&show_user=false"></iframe>
+      </div>
+      <div class="mixcloudRow">
+        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1102251613&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
+      </div>
+      <div class="mixcloudRow">
+        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1511199130&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
+      </div>
+      <div class="mixcloudRow">
+        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1351625251&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
+      </div>
+      <div class="mixcloudRow">
+        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1313664535&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
+      </div>
+      <div class="mixcloudRow">
+      <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1143804811&color=%23009ee0&inverse=true&auto_play=false&show_comments=true&show_user=false"></iframe>
+      </div>
+      <div class="mixcloudRow">
+        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1475923060&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
+      </div>
+      <div class="mixcloudRow">
+        <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1253685268&color=%23009ee0&inverse=true&auto_play=false&show_user=false&show_comments=true"></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="cvContainer" class="container draggable">
+    <a href="#" class="close">&times;</a>
+    <div style="text-align: center;">
+      <h1>Hire me I love gigs</h1>
+      <h3 style="color:#e0d215">Services Available:</h3>
+    </div>
+    <div class="buttonBar">
+      <button type="button" id="openOrganizerCVButton" class="button"> See Organizer CV ️</button>
+      <button type="button" id="openDJCVButton" class="button"> See DJ CV ️</button>
     </div>
   </div>
   <div id="rentalContainer" class="container draggable">
