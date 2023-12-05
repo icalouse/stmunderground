@@ -49,7 +49,6 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
-  display: none;
   left: 35%;
   position: absolute;
   top: 10%;
@@ -268,7 +267,7 @@ input[type=submit]:hover{
   cursor: pointer;
 }
 .switchButton {
-   display: inherit;
+   display: none;
    border: 1px;
    font-size: 16px;
    text-align: center;
@@ -340,7 +339,6 @@ input[type=submit]:hover{
     top: 20%;
   }
   #eventContainer1 {
-    display: none;
     top: auto;
     left: auto;
   }
@@ -355,7 +353,7 @@ input[type=submit]:hover{
     padding-bottom: 10px;
   }
   .switchButton {
-    display: inherit;
+    display: none;
     border: 1px;
     font-size: 16px;
     text-align: center;
@@ -512,21 +510,21 @@ input[type=submit]:hover{
     left: 50%;
     transform: translate(-50%, 0%);
     justify-content: space-evenly;
-    transition: top 0.5s ease-in-out; /* Add a smooth transition effect */ 
+    transition: margin 0.5s ease-in-out; /* Add a smooth transition effect */ 
     overflow: hidden;
   }
   .linkColumn {
     float: left;
     display: table-cell;
-    font-size: 24px;
+    font-size: 18px;
   }
   .linkColumn:hover {
     filter: brightness(90%);
     cursor: zoom-in;
   }
   .show-linkBar {
-    top: 0;
-    transition: top 0.5s ease-in-out; /* Add a smooth transition effect */ 
+    margin: 0;
+    transition: margin 0.5s ease-in-out; /* Add a smooth transition effect */ 
   }
   /* .linkColumn {
     float: none;
