@@ -49,6 +49,7 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
+  display: none;
   left: 35%;
   position: absolute;
   top: 10%;
@@ -341,6 +342,7 @@ input[type=submit]:hover{
     top: 20%;
   }
   #eventContainer1 {
+    display: none;
     top: auto;
     left: auto;
   }
@@ -512,7 +514,7 @@ input[type=submit]:hover{
     left: 50%;
     transform: translate(-50%, 0%);
     justify-content: space-evenly;
-    transition: margin 0.5s ease-in-out; /* Add a smooth transition effect */ 
+    transition: top 0.5s ease-in-out; /* Add a smooth transition effect */ 
     overflow: hidden;
   }
   .linkColumn {
