@@ -49,6 +49,7 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
+  display: none;
   left: 30%;
   position: absolute;
   top: 10%;
@@ -191,6 +192,7 @@ input[type=submit]:hover{
   height: 270px;
 }
 .eventContainer {
+  display: none;
   color: #fff;
   display: inline;
   height: auto;
