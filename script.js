@@ -71,13 +71,13 @@ $(function() {
 		$('#eventContainer1').show();
 	});
 	$('#openOrganizerCVButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/1LFsPXESbbciCS0LyWidp9g8P7Z_94exC/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1sC99fm3ASISTugA8N2TSf4nrJAaqfHuT/view?usp=sharing', '_blank');
 	});
 	$('#openDJCVButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/15uWfRflbe_HosLmgMAT1xPbh0f-12Mla/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1304IuqLOarTwaer-DM5yeJ4l5IK0T2E0/view?usp=sharing', '_blank');
 	});
 	$('#showContactButton').click(function(event) {
-		$('#contactEmail').first().text( "beaubien365@gmail.com" );
+		$('#contactEmail').first().text( "nic@stmunderground.com" );
 	});
 	$('#openInventoryButton').click(function(event) {
 		window.open('https://drive.google.com/file/d/1KBvNrnqQJcGkMJ71OcqbEk6G5VKtV7pN/view?usp=sharing', '_blank');
