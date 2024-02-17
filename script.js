@@ -64,7 +64,7 @@ $(function() {
 		});
 		$('#switchEventButton1').click(function(event) {
 			$('#eventContainer1').hide();
-			$('#hippodromeContainer').show();
+			$('#addressContainer').show();
 		});
 	$('#switchEventButton2').click(function(event) {
 		$('#eventContainer2').hide();

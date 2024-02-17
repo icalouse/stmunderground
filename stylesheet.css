@@ -59,23 +59,26 @@ input[type=submit]:hover{
   position: absolute;
   top: 13%;
 }
-#hippodromeContainer {
+.infoContainer {
   color: #fff;
   display: none;
   height: 480px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  padding: 25px;
   left: 28%;
   position: absolute;
   top: 13%;
   width: 550px;
   text-align: justify;
 }
-#hippodromeContainer a {
+.infoContainer a {
   color: #009EE0;
 }
-#hippodromeContainer li {
-  font-size: 14px;
+.infoContainer p {
+  font-size: 12px;
 }
-#hippodromeContainer h3 {
+.infoContainer h3 {
   color: #009EE0;
 }
 #defaultImageContainer {
@@ -193,8 +196,15 @@ input[type=submit]:hover{
 .eventContainer {
   color: #fff;
   display: inline;
-  height: auto;
+  height: 75%;
   padding-top: 25px;
+}
+.eventContainer p {
+  font-size: 11px;
+}
+.eventContainer a {
+  color: #009EE0;
+  text-decoration: none;
 }
 .close {
 	position: absolute;
@@ -256,6 +266,7 @@ input[type=submit]:hover{
   padding: 10px;
 }
 .ticketButton {
+  display: none;
   border: 1px;
   width: 35%;
   font-size: 16px;
@@ -267,12 +278,17 @@ input[type=submit]:hover{
   cursor: pointer;
 }
 .switchButton {
-   display: none;
    border: 1px;
-   font-size: 16px;
+   font-size: 14px;
    text-align: center;
    vertical-align: center;
    margin-top: 3%;
+ }
+ #addressContainer {
+    text-align: justify;
+ }
+ #addressWindow {
+  height: 100%;
  }
 .linkColumn {
   float: left;
@@ -343,6 +359,8 @@ input[type=submit]:hover{
   #eventContainer1 {
     top: auto;
     left: auto;
+    height: 75%;
+    padding-bottom: 15px;
   }
   #eventContainer2 {
     display: none;
@@ -355,7 +373,6 @@ input[type=submit]:hover{
     padding-bottom: 10px;
   }
   .switchButton {
-    display: none;
     border: 1px;
     font-size: 16px;
     text-align: center;
@@ -364,6 +381,17 @@ input[type=submit]:hover{
   }
   .switchButton:hover {
     cursor: pointer;
+  }
+  #addressContainer {
+    display: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 76%;
+    width: 86%;
+    top: 10%;
+    left: 5px;
   }
   #hippodromeContainer {
     display: none;
