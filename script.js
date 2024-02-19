@@ -80,7 +80,7 @@ $(function() {
 		$('#contactEmail').first().text( "nic@stmunderground.com" );
 	});
 	$('#openInventoryButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/1KBvNrnqQJcGkMJ71OcqbEk6G5VKtV7pN/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1bXUipvnEbZqzsU_xp6NuRi1l82xmS0Xg/view?usp=sharing', '_blank');
 	});
 		if (screen.width > 800) {
 		$('.posterRow').click(function(event) {
