@@ -266,7 +266,6 @@ input[type=submit]:hover{
   padding: 10px;
 }
 .ticketButton {
-  display: none;
   border: 1px;
   width: 35%;
   font-size: 16px;
@@ -278,6 +277,7 @@ input[type=submit]:hover{
   cursor: pointer;
 }
 .switchButton {
+  display: none;
    border: 1px;
    font-size: 14px;
    text-align: center;
@@ -373,6 +373,7 @@ input[type=submit]:hover{
     padding-bottom: 10px;
   }
   .switchButton {
+    display: none;
     border: 1px;
     font-size: 16px;
     text-align: center;
