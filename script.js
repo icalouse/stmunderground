@@ -63,11 +63,15 @@ $(function() {
 		window.location.href = $(this).attr('href');
 		});
 		$('#switchEventButton1').click(function(event) {
-			$('#eventContainer1').hide();
-			$('#addressContainer').show();
+			if (screen.width < 800) {
+				$('#eventContainer1').hide();
+			}
+			$('#eventContainer2').show();
 		});
 	$('#switchEventButton2').click(function(event) {
-		$('#eventContainer2').hide();
+		if (screen.width < 800) {
+			$('#eventContainer2').hide();
+		}
 		$('#eventContainer1').show();
 	});
 	$('#openOrganizerCVButton').click(function(event) {
