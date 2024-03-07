@@ -262,27 +262,16 @@ input[type=submit]:hover{
   border: 1px;
   border-radius: 6px;
   text-align: center;
+  vertical-align: center;
+  font-size: 14px;
   color: #e0d215;
   padding: 10px;
-}
-.ticketButton {
-  border: 1px;
-  width: 35%;
-  font-size: 16px;
-  text-align: center;
-  padding: 10px;
   margin-top: 3%;
+  width: auto;
 }
 .button:hover {
   cursor: pointer;
 }
-.switchButton {
-   border: 1px;
-   font-size: 14px;
-   text-align: center;
-   vertical-align: center;
-   margin-top: 3%;
- }
  #addressContainer {
     text-align: justify;
  }
