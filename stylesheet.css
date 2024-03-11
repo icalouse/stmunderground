@@ -272,6 +272,17 @@ input[type=submit]:hover{
 .button:hover {
   cursor: pointer;
 }
+.switchButton {
+  display: none;
+  border: 1px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: center;
+  margin-top: 3%;
+}
+.switchButton:hover {
+  cursor: pointer;
+}
  #addressContainer {
     text-align: justify;
  }
@@ -351,23 +362,6 @@ input[type=submit]:hover{
   }
   #eventContainer2 {
     display: none;
-  }
-  .buttonBar {
-    margin-left: 5%;
-    margin-right: 5%;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 10px;
-  }
-  .switchButton {
-    border: 1px;
-    font-size: 16px;
-    text-align: center;
-    vertical-align: center;
-    margin-top: 3%;
-  }
-  .switchButton:hover {
-    cursor: pointer;
   }
   #addressContainer {
     display: none;
