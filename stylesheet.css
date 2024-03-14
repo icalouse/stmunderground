@@ -358,7 +358,6 @@ input[type=submit]:hover{
   #eventContainer1 {
     left: auto;
     height: 75%;
-    padding-bottom: 15px;
   }
   #eventContainer2 {
     display: none;
@@ -477,6 +476,7 @@ input[type=submit]:hover{
     display: inline;
     height: auto;
     padding-top: 25px;
+    padding-bottom: 25px;
   }
   .close {
   	position: absolute;
