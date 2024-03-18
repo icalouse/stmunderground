@@ -287,6 +287,7 @@ input[type=submit]:hover{
     text-align: justify;
  }
  #addressWindow {
+  display: none;
   height: 100%;
  }
 .linkColumn {
