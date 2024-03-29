@@ -250,6 +250,9 @@ input[type=submit]:hover{
   padding-left: 10px;
   padding-right: 10px;
 }
+.eventWindow a {
+  font-size: 18px;
+}
 .buttonBar {
   margin-left: 5%;
   margin-right: 5%;
@@ -287,6 +290,7 @@ input[type=submit]:hover{
     text-align: justify;
  }
  #addressWindow {
+  display: none;
   height: 100%;
  }
 .linkColumn {
