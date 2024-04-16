@@ -49,15 +49,15 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
-  left: 33%;
-  position: absolute;
-  top: 10%;
-}
-#eventContainer2 {
-  display: none;
   right: 12%;
   position: absolute;
   top: 13%;
+  display: none;
+}
+#eventContainer2 {
+  left: 33%;
+  position: absolute;
+  top: 10%;
 }
 .infoContainer {
   color: #fff;
@@ -359,11 +359,12 @@ input[type=submit]:hover{
     top: 20%;
   }
   #eventContainer1 {
+    display: none;
     left: auto;
     height: 75%;
   }
   #eventContainer2 {
-    display: none;
+    height: 75%;
   }
   #addressContainer {
     display: none;
