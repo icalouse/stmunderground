@@ -75,16 +75,16 @@ $(function() {
 		$('#eventContainer1').show();
 	});
 	$('#openOrganizerCVButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/1sC99fm3ASISTugA8N2TSf4nrJAaqfHuT/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1ZVWcIHU079aep2k9XvcOxashEVtqlhMX/view?usp=sharing', '_blank');
 	});
 	$('#openDJCVButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/1304IuqLOarTwaer-DM5yeJ4l5IK0T2E0/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1HOCmX9j201JJmXIKirpgnoXYxCk-6sBk/view?usp=sharing', '_blank');
 	});
 	$('#showContactButton').click(function(event) {
 		$('#contactEmail').first().text( "nic@stmunderground.com" );
 	});
 	$('#openInventoryButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/17uHpoXVOSLTueAbobaGLafJ0jc1Zk7rj/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1hMvblvPdBpl9pxLF_jShs1qaW_TA_56D/view?usp=sharing', '_blank');
 	});
 		if (screen.width > 800) {
 		$('.posterRow').click(function(event) {
