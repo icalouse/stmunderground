@@ -49,19 +49,22 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
-  right: 12%;
-  position: absolute;
-  top: 13%;
-  display: none;
-}
-#eventContainer2 {
   left: 33%;
   position: absolute;
   top: 10%;
+  
+}
+#eventContainer2 {
+  display: none;
+  right: 12%;
+  position: absolute;
+  top: 13%;
+}
+#hippodromeContainer {
+  display: none;
 }
 .infoContainer {
   color: #fff;
-  display: none;
   height: 480px;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 6px;
@@ -353,15 +356,16 @@ input[type=submit]:hover{
     text-align: center;
   }
   .eventContainer {
-    top: 20%;
+    top: 15%;
   }
   #eventContainer1 {
-    display: none;
-    left: auto;
+    margin-left: auto;
+    margin-right: auto;
     height: 75%;
   }
   #eventContainer2 {
     height: 75%;
+    display: none;
   }
   #addressContainer {
     display: none;
