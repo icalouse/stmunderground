@@ -62,6 +62,10 @@ $(function() {
 		$('.subscribeButton').click(function(event) {
 		window.location.href = $(this).attr('href');
 		});
+		$('#showAddressButton').click(function(event) {
+			$('#eventContainer1').hide();
+			$('#hippodromeContainer').show();
+		});
 		$('#switchEventButton1').click(function(event) {
 			if (screen.width < 800) {
 				$('#eventContainer1').hide();
