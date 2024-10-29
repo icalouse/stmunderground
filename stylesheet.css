@@ -39,7 +39,7 @@ input[type=submit]:hover{
   filter: brightness(90%);
 }
 #subscribeContainer {
-  display: none;
+  display: block;
   left: 35%;
   top: 38%;
   position: absolute;
@@ -49,6 +49,7 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
+  display: none;
   left: 33%;
   position: absolute;
   top: 10%;
@@ -197,6 +198,7 @@ input[type=submit]:hover{
   height: 270px;
 }
 .eventContainer {
+  display: none;
   color: #fff;
   display: inline;
   height: 75%;
@@ -344,7 +346,7 @@ input[type=submit]:hover{
     background-size: contain;
   }
   #subscribeContainer {
-    display: none;
+    display: block;
     position: fixed;
     width: 98%;
     left: 5px;
