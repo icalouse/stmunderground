@@ -79,10 +79,10 @@ $(function() {
 		$('#eventContainer1').show();
 	});
 	$('#openOrganizerCVButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/1ZVWcIHU079aep2k9XvcOxashEVtqlhMX/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1NViGS2Hlk8Ohi9oo5f3BxFOzR-vDJdsx/view?usp=sharing', '_blank');
 	});
 	$('#openDJCVButton').click(function(event) {
-		window.open('https://drive.google.com/file/d/1HOCmX9j201JJmXIKirpgnoXYxCk-6sBk/view?usp=sharing', '_blank');
+		window.open('https://drive.google.com/file/d/1M03zHELVVTld1LKEjm0rkFgqGlqY_0jK/view?usp=sharing', '_blank');
 	});
 	$('#showContactButton').click(function(event) {
 		$('#contactEmail').first().text( "nic@stmunderground.com" );
