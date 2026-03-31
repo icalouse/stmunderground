@@ -39,7 +39,7 @@ input[type=submit]:hover{
   filter: brightness(90%);
 }
 #subscribeContainer {
-  display: block;
+  display: none;
   left: 35%;
   top: 38%;
   position: absolute;
@@ -49,7 +49,7 @@ input[type=submit]:hover{
   text-align: center;
 }
 #eventContainer1 {
-  display: none;
+  display: block;
   left: 33%;
   position: absolute;
   top: 10%;
@@ -292,9 +292,6 @@ input[type=submit]:hover{
  #addressContainer {
     text-align: justify;
  }
- #addressWindow {
-  height: 100%;
- }
 .linkColumn {
   float: left;
   display: table-cell;
@@ -362,7 +359,6 @@ input[type=submit]:hover{
     top: 15%;
   }
   #eventContainer1 {
-    display: none;
     margin-left: auto;
     margin-right: auto;
     left: auto;
