@@ -416,7 +416,7 @@ body {
 }
 
 .divider {
-  font-family: 'Courier New'; 
+  font-family: 'Segoe UI Symbol';  
   color: #e5d7c2;
 }
 
@@ -563,10 +563,9 @@ body {
   } */
 
   #popup-paper-mb img {
-    width: 40vw;
+    width: 80%;
     height: auto;
 }
-
 
   .date {
     display: inline;
